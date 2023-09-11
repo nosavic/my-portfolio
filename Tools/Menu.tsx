@@ -13,11 +13,11 @@ function Menu() {
   }
 
   return (
-    <div className="flex">
-      <div>
+    <div>
+      <div className="flex">
         <Hamburger onToggle={tap} color="#ffffff" size={32} />
+        <div>{side ? <Sidebar /> : null}</div>
       </div>
-      <div>{side ? <Sidebar /> : null}</div>
     </div>
   );
 }
