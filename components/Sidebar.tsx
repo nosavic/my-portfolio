@@ -1,11 +1,16 @@
+import Menu from "../Tools/Menu";
+import ToggleButton from "../Tools/toggleButton";
 import React from "react";
 
 function Sidebar() {
   return (
-    <div className="ml-[10px] text-red-700">
-      <div>About</div>
-      <div>Contact</div>
-      <div>Help</div>
+    <div>
+      <div className="flex items-center gap-[10px] font-semibold ">
+        <div>About</div>
+        <div>Contact</div>
+        <div>Help</div>
+        <ToggleButton />
+      </div>
     </div>
   );
 }

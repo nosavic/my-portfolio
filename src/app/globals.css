@@ -25,9 +25,17 @@
     )
     rgb(var(--background-start-rgb));
 } */
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background-color: black;
+} */
+
+ body {
+        @apply dark:bg-black bg-white
+    }
+
+.theflex {
+  display: flex;
 }
 
 .theflex1 {
@@ -36,3 +44,5 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+

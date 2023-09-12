@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import "./globals.css";
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
+import Spline from "../../components/Spline";
 // import { Inter } from "next/font/google";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -18,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <ThemeProvider attribute="class">
+        <body>{children}</body>
+      </ThemeProvider>
     </html>
   );
 }
