@@ -3,7 +3,7 @@ import Menu from "../Tools/Menu";
 
 function NavBar() {
   return (
-    <div className="theflex1">
+    <div className="px-[20px] sticky top-0">
       <Menu />
     </div>
   );

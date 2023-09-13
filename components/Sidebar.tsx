@@ -5,7 +5,7 @@ import React from "react";
 function Sidebar() {
   return (
     <div>
-      <div className="flex items-center gap-[10px] font-semibold ">
+      <div className="flex items-center gap-[10px] font-semibold text-gray-500 ">
         <div>About</div>
         <div>Contact</div>
         <div>Help</div>

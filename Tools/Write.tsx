@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-function Write({ name = "INNOVATE" }) {
+function Write({ name = "INNOVATE", look = "", speed=100}) {
   // INITIALIZE STATES //
 
   const [text, setText] = useState("");
@@ -15,13 +15,13 @@ function Write({ name = "INNOVATE" }) {
       setTimeout(() => {
         setText(text + fullText[index]);
         setIndex(index + 1);
-      }, 200);
+      }, speed);
     }
   }, [index]);
 
   //  RENDERD TEXT //
 
-  return <div className="font-extrabold">{text}</div>;
+  return <div className={look}>{text}</div>;
 }
 
 export default Write;

@@ -1,20 +1,18 @@
 "use client";
 
-
 import Top from "../../components/Top";
 import NavBar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
+import Spline from "../../components/SplineBubble";
+import { ThemeProvider as Provider } from "next-themes";
 
 export default function Home() {
-
-
-
-
-
   return (
-    <main >
-      <NavBar  />
-      <Top />
-    </main>
+    <Provider attribute="class">
+      <main className="relative">
+        <NavBar />
+        <Top />
+      </main>
+    </Provider>
   );
 }
