@@ -2,7 +2,14 @@
 import { type } from "os";
 import React, { useState } from "react";
 
-function IconApi({ path = string, view = "0,0,24,24", text = "Name" }) {
+function IconApi({
+  path = string,
+  view = "0,0,24,24",
+  text = "Name",
+  look = "",
+}) {
+  var moveUp = " hover:-translate-y-[7px]";
+
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseOver = () => {
@@ -14,9 +21,14 @@ function IconApi({ path = string, view = "0,0,24,24", text = "Name" }) {
   };
 
   return (
-    <div>
-      <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+    <div className="flex flex-col text-center justify-center place-items-center">
+      <div
+        className={moveUp}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      >
         <svg
+          className={look}
           viewBox={view}
           fill="currentColor"
           height="50px"
