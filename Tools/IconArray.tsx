@@ -23,12 +23,22 @@ function IconArray() {
   );
 
   return (
-    <div className="flex gap-[10px] items-center justify-center pt-[20px] bg-red-700">
-      <ReactIcon />
-      <AIcon path={ApiPath} />
-      <AIcon view={"0,0,32,32"} path={CssPath} />
-      <AIcon path={javaPath} />
-      <AIcon view={"0,0,32,32"} path={htmlPath} />
+    <div className="flex gap-[20px] pl-[50px] pt-[100px]">
+      <div className="hover:animate-spin">
+        <ReactIcon />
+      </div>
+      <div className="hover:animate-ping">
+        <AIcon path={ApiPath} />
+      </div>
+      <div className="hover:mb-[10px]">
+        <AIcon text={"CSS"} view={"0,0,32,32"} path={CssPath} />
+      </div>
+      <div className="hover:animate-bounce">
+        <AIcon text={"JavaScript"} path={javaPath} />
+      </div>
+      <div className="hover:animate-bounce">
+        <AIcon text={"HTML"} view={"0,0,32,32"} path={htmlPath} />
+      </div>
     </div>
   );
 }
