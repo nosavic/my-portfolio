@@ -39,7 +39,7 @@ function IconApi({
         </svg>
       </div>
 
-      <div>{isHovering && <div>{text}</div>}</div>
+      <div>{isHovering && <div className="font-semibold">{text}</div>}</div>
     </div>
   );
 }
