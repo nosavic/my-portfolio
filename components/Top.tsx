@@ -14,8 +14,8 @@ function Top() {
         </div>
         <Write look={"self-write"} name={"Nosakhare Victory. E"} />
         <Write
-          look={"ml-[52px] text-lg font-bold"}
-          name={"Front End Developer"}
+          look={"ml-[52px] text-[35px] font-bold"}
+          name={"Software Developer"}
           speed={150}
         />
       </div>

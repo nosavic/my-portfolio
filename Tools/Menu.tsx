@@ -18,7 +18,7 @@ function Menu() {
     <div>
       <div className="flex items-center">
         <div>{side ? <Sidebar /> : null}</div>
-        <Hamburger onToggle={tap} color="gray" size={32} />
+        <Hamburger duration={0.3} onToggle={tap} color="currentColor" size={32} />
       </div>
     </div>
   );

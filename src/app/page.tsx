@@ -2,8 +2,6 @@
 
 import Top from "../../components/Top";
 import NavBar from "../../components/Navbar";
-import Sidebar from "../../components/Sidebar";
-import Spline from "../../components/SplineBubble";
 import { ThemeProvider as Provider } from "next-themes";
 
 export default function Home() {
