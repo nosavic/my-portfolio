@@ -5,11 +5,6 @@ import type { Metadata } from "next";
 
 // const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Created by Nosakhare Victory",
-};
-
 export default function RootLayout({
   children,
 }: {
