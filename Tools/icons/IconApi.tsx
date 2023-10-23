@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 
-export function IconApi({
-  path = string,
-  view = "0,0,24,24",
-  text = "Name",
-  look = "",
-}): React.JSX.Element {
+export function IconApi(prop: any): React.JSX.Element {
   var moveUp = " hover:-translate-y-[7px]";
 
   const [isHovering, setIsHovering] = useState(false);
@@ -26,17 +21,17 @@ export function IconApi({
         onMouseOut={handleMouseOut}
       >
         <svg
-          className={look}
-          viewBox={view}
+          className={prop.look}
+          viewBox={prop.view}
           fill="currentColor"
           height="50px"
           width="50px"
         >
-          {path}
+          {prop.path}
         </svg>
       </div>
 
-      <div>{isHovering && <div>{text}</div>}</div>
+      <div>{isHovering && <div>{prop.text}</div>}</div>
     </div>
   );
 }

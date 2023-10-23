@@ -6,9 +6,13 @@ function NavBar(prop: any) {
     prop.theBubble();
   }
 
+  function theContact2() {
+    prop.theContact();
+  }
+
   return (
-    <div className="px-[20px] sticky top-0">
-      <Menu theBubble2={theBubble2} />
+    <div className="px-[20px] sticky top-0 backdrop-blur-[10px] z-20">
+      <Menu theBubble2={theBubble2} theContact2={theContact2} />
     </div>
   );
 }

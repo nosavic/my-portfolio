@@ -18,10 +18,18 @@ function Menu(prop: any) {
     prop.theBubble2();
   }
 
+  function theContact3() {
+    prop.theContact2();
+  }
+
   return (
     <div>
       <div className="flex items-center">
-        <div>{side ? <Sidebar theBubble3={theBubble3} /> : null}</div>
+        <div>
+          {side ? (
+            <Sidebar theBubble3={theBubble3} theContact3={theContact3} />
+          ) : null}
+        </div>
         <Hamburger
           duration={0.3}
           onToggle={tap}

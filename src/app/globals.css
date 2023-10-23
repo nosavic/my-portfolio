@@ -38,8 +38,6 @@ body {
   display: flex;
 }
 
-
-
 .self-write {
   font-size: 60px;
   white-space: wrap;
@@ -49,6 +47,8 @@ body {
   -webkit-text-fill-color: transparent;
   margin-left: 50px;
   margin-top: 100px;
+  margin-right: 20px;
+  
 }
 
 .spline {

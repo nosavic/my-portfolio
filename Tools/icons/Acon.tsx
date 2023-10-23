@@ -1,13 +1,6 @@
-// icon:api | Material Design Icons https://materialdesignicons.com/ | Austin Andrews
-import { type } from "os";
 import React, { useState } from "react";
 
-function IconApi({
-  path = string,
-  view = "0,0,24,24",
-  text = "Name",
-  look = "",
-}) {
+function IconApi(prop: any) {
   var moveUp = " hover:-translate-y-[7px]";
 
   const [isHovering, setIsHovering] = useState(false);
@@ -21,25 +14,26 @@ function IconApi({
   };
 
   return (
-    <div className="flex flex-col text-center justify-center place-items-center">
+    <div className="flex flex-col text-center justify-center place-items-center h-[100px]">
       <div
         className={moveUp}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
         <svg
-          className={look}
-          viewBox={view}
+          className={prop.look}
+          viewBox={prop.view}
           fill="currentColor"
           height="50px"
           width="50px"
-          // {...props}
         >
-          {path}
+          {prop.path}
         </svg>
       </div>
 
-      <div>{isHovering && <div className="font-semibold">{text}</div>}</div>
+      <div>
+        {isHovering && <div className="font-semibold">{prop.text}</div>}
+      </div>
     </div>
   );
 }

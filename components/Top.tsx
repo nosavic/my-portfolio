@@ -8,9 +8,9 @@ function Top(prop: any) {
   return (
     <div>
       <div className="flex flex-col ">
-        <Write look={"self-write"} name={"Nosakhare Victory. E"} />
+        <Write look={"self-write"} name={"Nosakhare Victory"} />
         <Write
-          look={"ml-[52px] text-[35px] font-bold"}
+          look={"ml-[52px] text-[35px] font-bold mr-[20px]"}
           name={"Software Developer"}
           speed={150}
         />
