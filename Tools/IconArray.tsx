@@ -33,7 +33,12 @@ function IconArray() {
         </div>
       </div>
       <div className="">
-        <AIcon look="text-red-500" text={"API"} path={ApiPath} />
+        <AIcon
+          look="text-red-500"
+          text={"API"}
+          view={"0,0,32,32"}
+          path={ApiPath}
+        />
       </div>
       <div className="">
         <AIcon
@@ -44,7 +49,12 @@ function IconArray() {
         />
       </div>
       <div className="">
-        <AIcon look="text-yellow-400" text={"JS"} path={javaPath} />
+        <AIcon
+          look="text-yellow-400"
+          text={"JS"}
+          view={"0,0,32,32"}
+          path={javaPath}
+        />
       </div>
       <div className="">
         <AIcon
