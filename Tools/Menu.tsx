@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Sling as Hamburger } from "hamburger-react";
 import Sidebar from "../components/Sidebar";
 
-function Menu() {
+function Menu(prop: any) {
   const [side, setSide] = useState(false);
 
   var look = "white";
@@ -14,11 +14,28 @@ function Menu() {
     setSide(!side);
   }
 
+  function theBubble3() {
+    prop.theBubble2();
+  }
+
+  function theContact3() {
+    prop.theContact2();
+  }
+
   return (
     <div>
       <div className="flex items-center">
-        <div>{side ? <Sidebar /> : null}</div>
-        <Hamburger onToggle={tap} color="gray" size={32} />
+        <div>
+          {side ? (
+            <Sidebar theBubble3={theBubble3} theContact3={theContact3} />
+          ) : null}
+        </div>
+        <Hamburger
+          duration={0.3}
+          onToggle={tap}
+          color="currentColor"
+          size={32}
+        />
       </div>
     </div>
   );

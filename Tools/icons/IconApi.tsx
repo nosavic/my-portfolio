@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function IconApi(prop: any) {
+export function IconApi(prop: any): React.JSX.Element {
   var moveUp = " hover:-translate-y-[7px]";
 
   const [isHovering, setIsHovering] = useState(false);
@@ -14,7 +14,7 @@ function IconApi(prop: any) {
   };
 
   return (
-    <div className="flex flex-col text-center justify-center place-items-center h-[100px]">
+    <div className="flex flex-col text-center justify-center place-items-center">
       <div
         className={moveUp}
         onMouseOver={handleMouseOver}
@@ -31,11 +31,7 @@ function IconApi(prop: any) {
         </svg>
       </div>
 
-      <div>
-        {isHovering && <div className="font-semibold">{prop.text}</div>}
-      </div>
+      <div>{isHovering && <div>{prop.text}</div>}</div>
     </div>
   );
 }
-
-export default IconApi;

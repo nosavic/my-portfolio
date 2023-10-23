@@ -2,14 +2,23 @@ import Menu from "../Tools/Menu";
 import ToggleButton from "../Tools/toggleButton";
 import React from "react";
 
-function Sidebar() {
+function Sidebar(prop: any) {
+  function theBubble4() {
+    prop.theBubble3();
+  }
+
+  function theContact4() {
+    prop.theContact3();
+  }
+
   return (
     <div>
-      <div className="flex items-center gap-[10px] font-semibold text-gray-500 ">
-        <div>About</div>
-        <div>Contact</div>
+      <div className="flex items-center gap-[10px] font-bold ">
+        <div onClick={theContact4} className="cursor-pointer">
+          Contact
+        </div>
         <div>Help</div>
-        <ToggleButton />
+        <ToggleButton theBubble4={theBubble4} />
       </div>
     </div>
   );
