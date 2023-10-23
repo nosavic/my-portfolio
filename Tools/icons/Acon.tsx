@@ -14,7 +14,7 @@ function IconApi(prop: any) {
   };
 
   return (
-    <div className="flex flex-col text-center justify-center place-items-center h-[100px]">
+    <div className="flex flex-col justify-center  h-[100px] text-center items-center self-center ">
       <div
         className={moveUp}
         onMouseOver={handleMouseOver}
@@ -32,7 +32,10 @@ function IconApi(prop: any) {
       </div>
 
       <div>
-        {isHovering && <div className="font-semibold">{prop.text}</div>}
+        <div className="font-semibold text-center items-center ">
+          {prop.text}
+        </div>
+        {/* {isHovering && <div className="font-semibold">{prop.text}</div>} */}
       </div>
     </div>
   );
