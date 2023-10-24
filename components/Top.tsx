@@ -6,19 +6,21 @@ import Spline from "../components/SplineBubble";
 
 function Top(prop: any) {
   return (
-    <div>
-      <div className="flex ml-[50px] mt-[50px] phone:ml-[30px] flex-col ">
-        <Write look={"self-write"} name={"Nosakhare Victory"} />
-        <Write
-          look={" text-[35px] font-bold mr-[20px]"}
-          name={"Software Developer"}
-          speed={150}
-        />
-      </div>
+    <main>
       <div>
+        <div className="flex ml-[50px] mt-[50px] phone:ml-[30px] flex-col ">
+          <Write look={"self-write"} name={"Nosakhare Victory"} />
+          <Write
+            look={" text-[35px] font-bold mr-[20px]"}
+            name={"Software Developer"}
+            speed={150}
+          />
+        </div>
+      </div>
+      <div className="ml-[50px] phone:ml-[20px] mt-[100px]">
         <IconArray />
       </div>
-    </div>
+    </main>
   );
 }
 export default Top;

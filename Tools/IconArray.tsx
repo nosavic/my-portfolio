@@ -41,7 +41,7 @@ function IconArray() {
   );
 
   return (
-    <div className="flex flex-wrap gap-[30px] pl-[50px] pt-[100px]">
+    <div className="flex flex-wrap gap-[30px]">
       <div className="">
         <div className="">
           <AIcon
