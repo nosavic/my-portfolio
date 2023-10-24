@@ -71,7 +71,7 @@ function IconArray() {
       <div className="">
         <AIcon
           look="text-[#38bdf8]"
-          text={"Tailwind CSS"}
+          text={"Tailwind"}
           view={"0,0,24,24"}
           path={TailPath}
         />
