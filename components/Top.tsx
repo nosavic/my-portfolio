@@ -7,10 +7,10 @@ import Spline from "../components/SplineBubble";
 function Top(prop: any) {
   return (
     <div>
-      <div className="flex flex-col ">
+      <div className="flex ml-[50px] mt-[50px] phone:ml-[30px] flex-col ">
         <Write look={"self-write"} name={"Nosakhare Victory"} />
         <Write
-          look={"ml-[52px] text-[35px] font-bold mr-[20px]"}
+          look={" text-[35px] font-bold mr-[20px]"}
           name={"Software Developer"}
           speed={150}
         />

@@ -18,7 +18,7 @@ export default function Project(prop: any) {
               height={prop.h}
             />
           </div>
-          <div className="hover:bg-slate-200 rounded-bl-[20px] rounded-br-[20px] w-full bg-opacity-[50%]  absolute bottom-0 pb-1 pl-5 text-gray-400 font-bold ">
+          <div className="hover:bg-slate-200 rounded-bl-[20px] rounded-br-[20px] w-full bg-opacity-[50%]  absolute bottom-0 pb-1 pl-5 text-gray-400 font-bold phone:text-lg ">
             {prop.name}
           </div>
         </Link>

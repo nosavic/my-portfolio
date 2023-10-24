@@ -17,7 +17,6 @@ function Sidebar(prop: any) {
         <div onClick={theContact4} className="cursor-pointer">
           Contact
         </div>
-        <div>Help</div>
         <ToggleButton theBubble4={theBubble4} />
       </div>
     </div>

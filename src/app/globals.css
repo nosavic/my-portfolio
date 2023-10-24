@@ -45,10 +45,6 @@ body {
   background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 50px;
-  margin-top: 100px;
-  margin-right: 20px;
-  
 }
 
 .spline {
