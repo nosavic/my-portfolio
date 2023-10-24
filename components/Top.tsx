@@ -17,7 +17,7 @@ function Top(prop: any) {
           />
         </div>
       </div>
-      <div className="ml-[50px] phone:ml-[20px] mt-[100px]">
+      <div className="mx-[50px] phone:mx-[10px] mt-[100px]">
         <IconArray />
       </div>
     </main>
