@@ -41,7 +41,7 @@ function IconArray() {
   );
 
   return (
-    <div className="flex flex-wrap gap-[30px]">
+    <div className="flex flex-wrap gap-[30px] phone:justify-center">
       <div className="">
         <div className="">
           <AIcon
