@@ -28,9 +28,9 @@ export default function Home() {
 
   return (
     <Provider attribute="class">
-      <div className="absolute w-[100%] h-screen -z-10 ">
+      {/* <div className="absolute w-[100%] h-screen -z-10 ">
         {bubble ? <Spline /> : null}
-      </div>
+      </div> */}
       <main className="relative">
         <NavBar theBubble={theBubble} theContact={theContact} />
         <Top theBubble={theBubble} />
