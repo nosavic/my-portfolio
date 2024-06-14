@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Write from "../Tools/Write";
 import IconArray from "../Tools/IconArray";
 import Spline from "../components/SplineBubble";
+import Skills from "./Skills";
 
 function Top(prop: any) {
   return (
@@ -18,7 +19,8 @@ function Top(prop: any) {
         </div>
       </div>
       <div className="mx-[50px] phone:mx-[10px] mt-[100px]">
-        <IconArray />
+        {/* <IconArray /> */}
+        <Skills />
       </div>
     </main>
   );
