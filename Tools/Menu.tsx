@@ -1,41 +1,30 @@
 "use client";
 
 import React, { useState } from "react";
-
 import { Sling as Hamburger } from "hamburger-react";
 import Sidebar from "../components/Sidebar";
+import { themeAtom } from "../atom";
+import { useAtom } from "jotai";
 
-function Menu(prop: any) {
+function Menu() {
+  const [theme, setTheme] = useAtom(themeAtom);
   const [side, setSide] = useState(false);
-
-  var look = "white";
 
   function tap() {
     setSide(!side);
   }
 
-  function theBubble3() {
-    prop.theBubble2();
-  }
-
-  function theContact3() {
-    prop.theContact2();
-  }
-
   return (
     <div>
       <div className="flex items-center">
-        <div>
-          {side ? (
-            <Sidebar theBubble3={theBubble3} theContact3={theContact3} />
-          ) : null}
-        </div>
-        <Hamburger
+        <Sidebar />
+        {/* <div>{side ? <Sidebar /> : null}</div> */}
+        {/* <Hamburger
           duration={0.3}
           onToggle={tap}
-          color="currentColor"
+          color={theme ? "#fff" : "#000"}
           size={32}
-        />
+        /> */}
       </div>
     </div>
   );

@@ -32,6 +32,7 @@
 
 body {
   @apply dark:bg-black bg-white;
+  transition: all 0.3s ease;
 }
 
 .theflex {
@@ -39,12 +40,9 @@ body {
 }
 
 .self-write {
-  font-size: 60px;
   white-space: wrap;
   font-weight: 800;
-  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
 }
 
 .spline {
