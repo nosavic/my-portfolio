@@ -1,23 +1,22 @@
 import Menu from "../Tools/Menu";
 import ToggleButton from "../Tools/toggleButton";
 import React from "react";
+import { themeAtom } from "../atom";
+import { useAtom } from "jotai";
 
-function Sidebar(prop: any) {
-  function theBubble4() {
-    prop.theBubble3();
-  }
-
-  function theContact4() {
-    prop.theContact3();
+function Sidebar() {
+  const [theme, setTheme] = useAtom(themeAtom);
+  function togtheme() {
+    setTheme(!theme);
   }
 
   return (
     <div>
       <div className="flex items-center gap-[10px] font-bold ">
-        <div onClick={theContact4} className="cursor-pointer">
+        {/* <div className={`${theme ? "text-[#fff]" : "text-[#000]"}`}>
           Contact
-        </div>
-        <ToggleButton theBubble4={theBubble4} />
+        </div> */}
+        <ToggleButton />
       </div>
     </div>
   );

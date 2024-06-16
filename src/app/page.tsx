@@ -7,38 +7,37 @@ import React, { useState } from "react";
 import Spline from "../../components/SplineBubble";
 import Projects from "../../components/Projects";
 import Footer from "../../components/Footer";
+import Works from "../../components/Works";
+import { themeAtom } from "../../atom";
+import { useAtom } from "jotai";
+import Contact from "../../components/Contact";
+import Email from "../../Tools/icons/envelope.svg";
+import Email2 from "../../Tools/icons/envelope2.svg";
+import Image from "next/image";
 
 export default function Home() {
-  const [bubble, setbubble] = useState(false);
-
-  const [contact, setcontact] = useState(false);
-
-  function theBubble() {
-    setbubble((before) => {
-      return !before;
-    });
-    console.log("bubbling");
-  }
-
-  function theContact() {
-    setcontact((before) => {
-      return !before;
-    });
-  }
-
+  const [theme, setTheme] = useAtom(themeAtom);
   return (
-    <Provider attribute="class">
-      {/* <div className="absolute w-[100%] h-screen -z-10 ">
-        {bubble ? <Spline /> : null}
-      </div> */}
-      <main className="relative">
-        <NavBar theBubble={theBubble} theContact={theContact} />
-        <Top theBubble={theBubble} />
-        <div className="w-[100%] h-screen">
-          <Projects />
+    // <Provider attribute="class">
+    <main
+      className={` relative ${
+        theme ? "bg-black text-white " : "bg-white text-black "
+      }`}
+    >
+      <div className="relative">
+        <NavBar />
+        <Top />
+        <div className="w-[100%] pt-[30px] h-screen">
+          <div className="ml-[50px] mt-[50px] font-bold text-[35px]">
+            PROJECTS
+          </div>
+          <Works />
         </div>
-        {contact ? <Footer /> : null}
-      </main>
-    </Provider>
+      </div>
+      <div className="fixed bottom-5 right-5">
+        <Footer />
+      </div>
+    </main>
+    // </Provider>
   );
 }
