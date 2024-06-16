@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { cilList, cilShieldAlt, cibNextJs } from "@coreui/icons";
-import CIcon from "@coreui/icons-react";
 import NextIcon from "../Tools/icons/nextjs.svg";
 import NextIcon2 from "../Tools/icons/nextjsw.svg";
 import Tailwind from "../Tools/icons/tailwind-css.svg";
