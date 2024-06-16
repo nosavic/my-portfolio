@@ -26,7 +26,7 @@ export default function Skills() {
   const [theme, setTheme] = useAtom(themeAtom);
   return (
     <>
-      <div className="flex flex-wrap items-end gap-10">
+      <div className="phone:grid phone:grid-cols-4 flex flex-wrap items-end gap-10">
         {skillArray.map((skill) => (
           <div
             key={skill.value}
@@ -44,7 +44,11 @@ export default function Skills() {
                 height={50}
               />
             </div>
-            <div className={`${theme ? "text-white" : "text-black"}`}>
+            <div
+              className={` phone:text-[12px] ${
+                theme ? "text-white" : "text-black"
+              }`}
+            >
               {skill.name}
             </div>
           </div>

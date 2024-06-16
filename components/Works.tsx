@@ -11,7 +11,7 @@ export default function Works() {
   const [theme, setTheme] = useAtom(themeAtom);
   return (
     <div>
-      <div className="flex phone:flex-wrap gap-10 mx-[40px] mt-[50px] ">
+      <div className="flex phone:flex-wrap mx-[40px] phone:mx-[20px] gap-10 ">
         {workArray.map((work) => (
           <Link
             href={work.url ? work.url : ""}

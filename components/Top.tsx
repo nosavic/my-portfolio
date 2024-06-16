@@ -13,19 +13,22 @@ function Top(prop: any) {
     <main>
       <div>
         <div
-          className={`flex ml-[50px] mt-[50px] flex-col ${
+          className={`flex phone:mx-[20px] mx-[40px] flex-col ${
             theme ? "text-[#fff]" : "text-[#000]"
           } `}
         >
-          <Write look={"self-write"} name={"Nosakhare Victory"} />
           <Write
-            look={" text-[35px] font-bold mr-[20px]"}
+            look={"self-write text-[60px] phone:text-[30px] "}
+            name={"Nosakhare Victory"}
+          />
+          <Write
+            look={" text-[35px] phone:text-[15px] font-bold mr-[20px]"}
             name={"Software Developer"}
             speed={150}
           />
         </div>
       </div>
-      <div className="mx-[50px] mt-[100px]">
+      <div className="mx-[50px] mt-[100px] phone:mt-[50px]">
         <Skills />
       </div>
     </main>

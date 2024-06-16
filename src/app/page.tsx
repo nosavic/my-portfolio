@@ -28,7 +28,7 @@ export default function Home() {
         <NavBar />
         <Top />
         <div className="w-[100%] pt-[30px] h-screen">
-          <div className="ml-[50px] mt-[50px] font-bold text-[35px]">
+          <div className=" font-bold phone:mx-[20px] mx-[40px] mb-[10px] mt-[10px] text-[35px]">
             PROJECTS
           </div>
           <Works />

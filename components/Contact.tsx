@@ -116,8 +116,8 @@ export default function Contact() {
           >
             Send Message
           </button>
-          {error && <p style={{ color: "red" }}>{error}</p>}
-          {success && <p style={{ color: "green" }}>{success}</p>}
+          {/* {error && <p style={{ color: "red" }}>{error}</p>} */}
+          {/* {success && <p style={{ color: "green" }}>{success}</p>} */}
         </form>
       </div>
     </div>
