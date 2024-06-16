@@ -20,8 +20,8 @@ export default function Home() {
   return (
     // <Provider attribute="class">
     <main
-      className={` relative ${
-        theme ? "bg-black text-white " : "bg-white text-black "
+      className={` h-[100%] relative ${
+        theme ? " text-white " : "bg-white text-black  "
       }`}
     >
       <div className="relative">
